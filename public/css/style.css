@@ -1,0 +1,18 @@
+@font-face {
+    font-family: peyda-regular;
+    src: url("../assets/fonts/PEYDA-REGULAR.TTF");
+}
+
+@font-face {
+    font-family: peyda-black;
+    src: url("../assets/fonts/PEYDA-BLACK.TTF");
+}
+
+@font-face {
+    font-family: peyda-bold;
+    src: url("../assets/fonts/PEYDA-BOLD.TTF");
+}
+
+html {
+    font-family: peyda-regular;
+}
