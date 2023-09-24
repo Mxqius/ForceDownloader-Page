@@ -16,3 +16,7 @@
 html {
     font-family: peyda-regular;
 }
+/* Border Radius for download dialog modal */
+#downloadDialog {
+    border-radius: 25px;
+}
