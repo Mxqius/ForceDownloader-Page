@@ -16,7 +16,45 @@
 html {
     font-family: peyda-regular;
 }
+
 /* Border Radius for download dialog modal */
 #downloadDialog {
-    border-radius: 25px;
+    border-radius: 25px;    
+}
+/* 
+#titleScreen::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 13px;
+    left: 5px; 
+
+    color: #E94822;
+    overflow: hidden;
+
+    animation: fillForwards 2000ms ease-in infinite;
+} */
+#loaderScreen {
+    transition: opacity 0.75s,visibility 0.75s;
+}
+
+.loader-hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.progressLoader {
+    animation: fillForwards 3000ms ease-in-out alternate;
+}
+
+@keyframes fillForwards {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+body{
+    cursor: url("./cursor.png") auto;
 }
