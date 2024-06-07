@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fa">
 
 <head>
     <meta charset="UTF-8">
@@ -13,9 +13,9 @@
     <link rel="stylesheet" href="../public/css/style.css">
 </head>
 
-<body class="bg-[#2C2D34] flex flex-col min-h-screen">
+<body dir="rtl" class="bg-[#0F0F0F] w-full h-full">
     <div id="loaderScreen"
-        class="bg-[#2C2D34] w-[100vw] h-[100vh] flex flex-col gap-12 justify-center items-center fixed left-0 top-0">
+        class="bg-[#0F0F0F] w-[100vw] h-[100vh] flex flex-col gap-12 justify-center items-center fixed left-0 top-0">
         <h3 class="text-white text-6xl font-[peyda-black]"><span id="titleScreen" data-text="فورس"
                 class="text-[#E94822]">فورس
             </span>
@@ -25,8 +25,8 @@
         </div>
     </div>
     <!-- Download Modal -->
-    <dialog id="downloadDialog" class="bg-[#3C3C43] w-[70%] h-[75%] sticky bottom-12">
-        <button id="close-downloadModal" class="absolute top-[3vh] left-[67vw]"><i
+    <dialog id="downloadDialog" class="bg-[#18191cc4] w-[1200px] fixed bottom-12 pb-8">
+        <button id="close-downloadModal" class="absolute top-[20px] right-[20px]"><i
                 class="fa fa-close text-white text-3xl"></i></button>
         <h2 class="text-white font-[peyda-bold] mb-5 text-center py-10 text-3xl">نتایج جستجو</h2>
         <div class="flex flex-row flex-wrap justify-center items-center gap-12">
@@ -77,84 +77,99 @@
             </div>
         </div>
     </dialog>
-    <!-- Header -->
-    <header
-        class="bg-transparent flex py-10 justify-between gap-[1rem] items-center flex-wrap max-w-[1400px] w-[100vw] mx-auto">
-        <a href="https://github.com/mxqius"
-            class="bg-[#E94822] cursor-pointer text-slate-50 rounded-3xl px-[4rem] py-3 text-center">گیت هاب</a>
-        <nav class="bg-[#27272A] border-[#E94822] border-2 w-[35rem] rounded-3xl  text-slate-50 px-12 py-3">
-            <ul class="flex justify-between">
-                <li>
-                    <a class=" hover:border-[#E94822] hover:border-b-[1px] hover:rounded-sm hover:-translate-y-[0.5px]"
-                        href="#force-about">درباره ما</a>
-                </li>
-                <li><a class="hover:border-[#E94822] hover:border-b-[1px] hover:rounded-sm hover:-translate-y-[0.5px]"
-                        href="#force-donate">حمایت از ما</a></li>
-                <li><a class="hover:border-[#E94822] hover:border-b-[1px] hover:rounded-sm hover:-translate-y-[0.5px]"
-                        href="#force-search">خانه</a></li>
-            </ul>
-        </nav>
-        <a href="#" class="py-2 text-3xl font-[peyda-black] text-slate-50 select-none"><span
-                class="text-[#E94822]">فورس</span>
-            دانلود</a>
-    </header>
-    <div class="max-w-[1400px] mx-auto">
+    <div class="max-w-[1300px] mx-auto md:p-0 px-5">
+        <!-- Header -->
+        <header class="bg-transparent flex py-10 justify-between w-full">
+            <a href="#" class="py-2 text-3xl font-[peyda-black] text-slate-50 select-none"><span
+                    class="text-[#E94822]">فورس</span>
+                دانلود</a>
+            <nav class="md:flex hidden justify-center grow text-slate-50 py-3">
+                <ul class="flex gap-8">
+                    <li>
+                        <a class="py-2 px-6 hover:border-[#E94822] hover:border-b-[1px] hover:-translate-y-[0.5px]"
+                            href="#force-search">خانه</a>
+                    </li>
+                    <li>
+                        <a class="py-2 px-6 hover:border-[#E94822] hover:border-b-[1px] hover:-translate-y-[0.5px]"
+                            href="#force-about">درباره ما</a>
+                    </li>
+                    <li>
+                        <a class="py-2 px-6 hover:border-[#E94822] hover:border-b-[1px] hover:-translate-y-[0.5px]"
+                            href="#force-donate">حمایت از ما</a>
+                    </li>
+                    <li>
+                        <a class="py-2 px-6 hover:border-[#E94822] hover:border-b-[1px] hover:-translate-y-[0.5px]"
+                            href="#force-donate">سرور دیسکورد</a>
+                    </li>
+                </ul>
+            </nav>
+            <a href="https://github.com/mxqius"
+                class="bg-[#E94822] cursor-pointer text-slate-50 rounded-3xl px-[4rem] py-3 text-center">گیت هاب</a>
+        </header>
         <!-- Search -->
         <section id="force-search">
             <div>
-                <div class="pt-14">
-                    <h2
-                       id="titleForceDownload" class="text-slate-50 font-[peyda-bold] text-5xl text-center">
+                <div class="mt-14">
+                    <h2 id="titleForceDownload" class="text-slate-50 font-[peyda-black] text-5xl text-center">
                         بدون محدودیت دانلود کن</h2>
-                    <p class="text-slate-50 pt-5 text-[#CBCBCB] text-1xl text-center">با فورس دانلود هر موزیکی رو دانلود
+                    <p class="pt-5 text-[#CBCBCB] text-1xl text-center">با فورس دانلود هر موزیکی رو
+                        دانلود
                         کن
                         و
                         گوش بده</p>
                 </div>
-                <div class="pt-14 flex-col">
-                    <div class="flex justify-center gap-3">
+                <div class="pt-10 flex-col">
+                    <div class="flex justify-center items-center">
                         <input type="url" name="songUrl" id="songUrl"
-                            class="bg-[#3C3C43] w-[40rem] rounded-3xl px-6 py-2" placeholder="لینکتو بزار اینجا :)">
+                            class="bg-[#222223] w-[35rem] border-[#FFFFFF26] border-[0.5px] rounded-r-3xl px-6 py-2"
+                            placeholder="لینکتو بزار اینجا :)">
                         <button
-                            class="flex justify-center items-center gap-4 bg-[#E94822] cursor-pointer text-slate-50 rounded-3xl px-[3rem] py-3 w-[12rem]"
+                            class="flex justify-center items-center gap-4 bg-[#E94822] cursor-pointer text-slate-50 rounded-l-3xl px-[3rem] py-2 w-[12rem]"
                             id="searchButton"><i class="fa fa-search"></i>جستجو</button>
                     </div>
-                    <div class="flex justify-center py-7 gap-4">
-                        <span class="text-[#CBCBCB] cursor-pointer hover:-translate-y-[2px]">اسپاتیفای</span>
-                        <span class="text-[#CBCBCB] cursor-pointer hover:-translate-y-[2px]">رادیوجوان</span>
-                        <span class="text-[#CBCBCB] cursor-pointer hover:-translate-y-[2px]">ساندکلود</span>
-                        <span class="text-[#CBCBCB] cursor-pointer hover:-translate-y-[2px]">یوتیوب</span>
+                    <div class="flex justify-center py-4 gap-4 mt-6">
+                        <span
+                            class="text-[#CBCBCB] cursor-pointer transiotion duration-150 hover:-translate-y-[2px]">اسپاتیفای</span>
+                        <span
+                            class="text-[#CBCBCB] cursor-pointer transiotion duration-150 hover:-translate-y-[2px]">رادیوجوان</span>
+                        <span
+                            class="text-[#CBCBCB] cursor-pointer transiotion duration-150 hover:-translate-y-[2px]">ساندکلود</span>
+                        <span
+                            class="text-[#CBCBCB] cursor-pointer transiotion duration-150 hover:-translate-y-[2px]">یوتیوب</span>
                     </div>
                 </div>
         </section>
         <!-- Features -->
         <section id="force-feature">
-            <div class="p-10 flex flex-wrap justify-center gap-14">
+            <div class="py-10 flex justify-center gap-14 md:flex-row flex-col">
                 <div dir="rtl"
-                    class="bg-[#3C3C43] rounded-3xl p-10 flex-col w-[23rem] border-transparent border-[2px] transiotion duration-150 hover:border-[#fff] hover:-translate-y-4">
-                    <h3 class="text-slate-50 font-[peyda-bold] text-2xl pb-5">سرعت بالا</h3>
+                    class="bg-[#222223] grow rounded-3xl p-10 flex-col basis-1/3 border-[#FFFFFF26] border-[2px] transiotion duration-150 hover:border-[#fff] hover:-translate-y-4">
+                    <h3 class="text-slate-50 font-[peyda-bold] text-2xl pb-5">بدون محدودیت</h3>
                     <div class="h-[1px] w-[20%] bg-[#E94822] rounded-full"></div>
-                    <p class="text-[#B3A9A9] m-5 text-justify">بابهینه سازی های متوالی و سرور های قدرتمند فورس دانلود ،
-                        بیشترین سرعت
-                        دانلود برای شما در دسترس خواهد بود.</p>
+                    <p class="text-[#B3A9A9] m-5 text-justify">یکی از اهداف اصلی فورس دانلود فراهم آوردن دانلود آسان
+                        و
+                        بدون
+                        محدودیت برای
+                        کاربران عاشق موزیک می باشد
+                        که در آن پیشرو است.</p>
                 </div>
                 <div dir="rtl"
-                    class="bg-[#3C3C43] rounded-3xl p-10 flex-col w-[23rem] border-transparent border-[2px] transiotion duration-150 hover:border-[#fff] hover:-translate-y-4">
+                    class="bg-[#222223] grow rounded-3xl p-10 flex-col basis-1/3 border-[#FFFFFF26] border-[2px] transiotion duration-150 hover:border-[#fff] hover:-translate-y-4">
                     <h3 class="text-slate-50 font-[peyda-bold] text-2xl pb-5">پشتیبانی از پلتفرم های مختلف</h3>
                     <div class="h-[1px] w-[20%] bg-[#E94822] rounded-full"></div>
-                    <p class="text-[#B3A9A9] m-5 text-justify">فورس دانلود با پشتیبانی از معروف ترین پلتفرم های موزیک ،
+                    <p class="text-[#B3A9A9] m-5 text-justify">فورس دانلود با پشتیبانی از معروف ترین پلتفرم های
+                        موزیک ،
                         دانلود از تمامی
                         آن ها را برای شما فراهم می کند.</p>
                 </div>
                 <div dir="rtl"
-                    class="bg-[#3C3C43] rounded-3xl p-10 flex-col w-[23rem] border-transparent border-[2px] transiotion duration-150 hover:border-[#fff] hover:-translate-y-4">
-                    <h3 class="text-slate-50 font-[peyda-bold] text-2xl pb-5">بدون محدودیت</h3>
+                    class="bg-[#222223] grow rounded-3xl p-10 flex-col basis-1/3 border-[#FFFFFF26] border-[2px] transiotion duration-150 hover:border-[#fff] hover:-translate-y-4">
+                    <h3 class="text-slate-50 font-[peyda-bold] text-2xl pb-5">سرعت بالا</h3>
                     <div class="h-[1px] w-[20%] bg-[#E94822] rounded-full"></div>
-                    <p class="text-[#B3A9A9] m-5 text-justify">یکی از اهداف اصلی فورس دانلود فراهم آوردن دانلود آسان و
-                        بدون
-                        محدودیت برای
-                        کرابران عاشق موزیک می باشد
-                        که در آن پیشرو است.</p>
+                    <p class="text-[#B3A9A9] m-5 text-justify">بابهینه سازی های متوالی و سرور های قدرتمند فورس
+                        دانلود ،
+                        بیشترین سرعت
+                        دانلود برای شما در دسترس خواهد بود.</p>
                 </div>
             </div>
         </section>
@@ -163,11 +178,11 @@
             <div class="flex flex-col items-center py-10">
                 <h2 class="text-slate-50 font-[peyda-bold] text-2xl pb-14">درباره ما</h2>
                 <div dir="rtl"
-                    class="bg-[#3C3C43] rounded-3xl flex flex-row gap-10 items-center justify-center w-[90%] h-auto py-12 px-20 h-[30rem]">
-                    <div class="flex flex-col w-[50%]">
+                    class="bg-[#222223] border-[#FFFFFF26] border-[2px] transiotion duration-150 hover:border-[#fff] rounded-3xl flex flex-col md:flex-row gap-10 items-center justify-center grow h-auto py-12 px-12">
+                    <div class="flex flex-col basis-1/2">
                         <h3 class="text-indigo-50 text-3xl mb-10 font-[peyda-bold]">ما کی هستیم؟</h3>
                         <div class="flex flex-row items-center gap-4 w-auto h-auto p-5 rounded-[50px] text-[#B3A9A9]">
-                            <div class="h-[7rem] w-[1px] w-[1px] bg-[#E94822]"></div>
+                            <div class="h-[7rem] w-[1px] bg-[#E94822]"></div>
                             <p class="ml-5 text-justify">ما تیمی جوان و پرشوق هستیم که علاقه داریم تا برنامه های
                                 کاربردی بسازیم تا از
                                 این طریق
@@ -175,10 +190,11 @@
                                 باشیم و تا حد ممکن این کار را به صورت کاملا رایگان انجام دهیم.</p>
                         </div>
                     </div>
-                    <div class="flex flex-col w-[50%]">
+                    <div class="flex flex-col basis-1/2">
                         <h3 class="text-indigo-50 text-3xl mb-10 font-[peyda-bold]">هدف ما چیست؟</h3>
                         <div class="flex flex-col items-start gap-4 w-auto h-auto p-5 rounded-[50px] text-[#B3A9A9]">
-                            <p class="ml-5 text-justify">هدف اصلی <span class="text-[#E94822]"> فورس دانلود</span> این
+                            <p class="ml-5 text-justify">هدف اصلی <span class="text-[#E94822]"> فورس دانلود</span>
+                                این
                                 است
                                 که بستری برای دانلود راحت و سریع
                                 آهنگ
@@ -187,7 +203,7 @@
                                 دوست دارند
                                 فراهم کند تا بدون هیچ
                                 هزینه و اتلاف زمانی بتوانند آهنگ مورد علاقه خود را دانلود کنند.</p>
-                            <div class="w-[14rem] h-[1px] w-[1px] bg-[#E94822]"></div>
+                            <div class="w-[14rem] h-[1px] bg-[#E94822]"></div>
                         </div>
                     </div>
                 </div>
@@ -195,31 +211,38 @@
         </section>
         <!-- Donate us -->
         <section id="force-donate">
-            <div class="flex flex-col items-center py-10">
+            <div class="flex flex-col py-10">
                 <h2 class="text-slate-50 text-center font-[peyda-bold] text-2xl pb-14">از ما حمایت کنید</h2>
-                <div class="bg-[#3C3C43] flex flex-row justify-around rounded-full items-center w-[90%] py-5">
+                <div
+                    class="bg-[#222223] border-[#FFFFFF26] border-[2px] transiotion duration-150 hover:border-[#fff] flex flex-col md:flex-row justify-around rounded-3xl items-center p-5 md:gap-0 gap-5">
+                    <p class="text-[#B3A9A9] text-center">حمایت از ما باعث میشود تا این بستر به صورت رایگان در دسترس
+                        همگی بماند
+                        و
+                        توسعه
+                        سریع تری داشته باشد</p>
+                    <div class="md:h-3 h-[2px] md:w-3 w-20 bg-[#E94822] rounded-full"></div>
                     <a href="#" id="donateButton"
                         class="ml-4 h-[80%] bg-[#E94822] cursor-pointer text-slate-50 rounded-3xl px-[4rem] py-1">حمایت
                         میکنم</a>
-                    <div class="h-3 w-3 bg-[#E94822] rounded-full"></div>
-                    <p class="text-[#B3A9A9]">حمایت از ما باعث میشود تا این بستر به صورت رایگان در دسترس همگی بماند و
-                        توسعه
-                        سریع تری داشته باشد</p>
                 </div>
             </div>
         </section>
+        <!-- Footer -->
+        <footer class="flex justify-center mt-auto">
+            <div
+                class="bg-[#222223] border-[#FFFFFF26] border-x-[2px] border-t-[2px] transiotion duration-150 hover:border-[#fff] grow rounded-t-3xl md:p-10 pt-5 flex md:flex-row flex-col-reverse h-fit items-center justify-around gap-6">
+                <p class="text-[#B3A9A9] text-center md:p-0 pb-5">تمامی حقوق متعلق به <span class="text-[#D5D0D0]">تیم
+                        روکسا</span> می باشد و
+                    هرگونه
+                    استفاده نادرست برعهده خود کاربر
+                    است.
+                </p>
+                <h2 class="md:text-3xl font-[peyda-black] text-slate-50"><span class="text-[#E94822]">فورس</span>
+                    دانلود
+                </h2>
+            </div>
+        </footer>
     </div>
-    <!-- Footer -->
-    <footer class="max-w-[1400px] flex justify-center mt-auto mx-auto">
-        <div class="bg-[#3C3C43] w-[85vw] rounded-t-[50px] h-20 p-16 flex items-center justify-around">
-            <p class="text-[#B3A9A9]">تمامی حقوق متعلق به <span class="text-[#D5D0D0]">تیم روکسا</span> می باشد و هرگونه
-                استفاده نادرست برعهده خود کاربر
-                است.
-            </p>
-            <h2 class="py-2 text-3xl font-[peyda-black] text-slate-50"><span class="text-[#E94822]">فورس</span> دانلود
-            </h2>
-        </div>
-    </footer>
     <script src="../public/js/script.js"></script>
 </body>
 
